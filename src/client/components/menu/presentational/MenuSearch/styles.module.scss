@@ -1,0 +1,34 @@
+@import "styles/variables.scss";
+
+.menu-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .wrapper {
+        position: relative;
+
+        // width: 280px;
+        width: 87%;
+        height: 38px;
+
+        img {
+            position: absolute;
+            right: 10px;
+            top: 6px;
+            height: 26px;
+            width: 26px;
+        }
+
+        .input {
+            font-size: 16px;
+            border: 1px solid $divider;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            background-color: $inputs;
+            color: $text-dark-secondary;
+            padding: 10px 35px 10px 20px;
+        }
+    }
+}

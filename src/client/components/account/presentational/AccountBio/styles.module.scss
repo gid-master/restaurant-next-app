@@ -1,0 +1,18 @@
+@import "styles/variables.scss";
+
+.account-bio {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+        color: $text-dark;
+        margin: 5px 0;
+    }
+
+    .email {
+        color: $text-dark-secondary;
+        margin-bottom: 20px;
+    }
+}

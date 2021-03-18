@@ -1,0 +1,18 @@
+@import "styles/variables.scss";
+
+.menu-filter {
+    width: 100vw;
+    margin-left: -$app-horizontal;
+    padding: 0 $app-horizontal;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    .item {
+        // white-space: normal;
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: $padding;
+        }
+    }
+}

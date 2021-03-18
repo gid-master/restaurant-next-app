@@ -1,0 +1,70 @@
+@import "styles/variables.scss";
+
+.button-circle {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    cursor: pointer;
+
+    .image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+
+        img {
+            max-width: 26px;
+            max-height: 26px;
+        }
+    }
+
+    span {
+        color: $text-dark;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+
+    &.light {
+        .image {
+            background-color: $third-color;
+        }
+    }
+
+    &.small {
+        .image {
+            width: 30px;
+            height: 30px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &.selected {
+        cursor: default;
+
+        .image {
+            background-color: $secondary-color;
+        }
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    &.horizontal {
+        flex-flow: row;
+
+        span {
+            margin-top: 0;
+            margin-left: 10px;
+        }
+    }
+}

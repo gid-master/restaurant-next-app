@@ -1,0 +1,78 @@
+@import "styles/variables.scss";
+
+.login-authentication {
+    display: flex;
+    flex-flow: column;
+
+    // align-items: center;
+
+    h2 {
+        color: $text-dark;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .main-message {
+        color: $error;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .controller {
+        margin-bottom: 25px;
+
+        .input {
+            height: 50px;
+            border: 1px solid $divider;
+            width: 100%;
+            padding: 8px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: $text-dark;
+            opacity: 0.6;
+
+            &::-webkit-input-placeholder {
+                color: $text-dark;
+                opacity: 0.6;
+            }
+        }
+
+        .message {
+            display: none;
+        }
+
+        &.error {
+            color: $error;
+
+            .input {
+                border-color: $error;
+                color: $error;
+
+                &::-webkit-input-placeholder {
+                    color: $error;
+                    opacity: 1;
+                }
+            }
+
+            .message {
+                color: $error;
+                display: block;
+            }
+        }
+    }
+
+    .account {
+        color: $text-dark;
+        margin: 45px 0;
+        text-align: center;
+    }
+
+    .forgot {
+        color: $text-dark-secondary;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

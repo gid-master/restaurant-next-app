@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+
+.pwa-install {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    .description {
+        color: $text-dark-secondary;
+        text-align: center;
+        margin: 20px 0;
+    }
+}

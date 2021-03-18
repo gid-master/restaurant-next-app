@@ -1,0 +1,65 @@
+@import "styles/variables.scss";
+
+.card-vertical {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid $divider;
+
+    .image {
+        object-fit: cover;
+        width: 100%;
+        height: 160px;
+        background-color: $divider;
+    }
+
+    .details {
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: $third-color;
+
+        .title {
+            color: $text-dark;
+        }
+
+        .description {
+            color: $text-dark-secondary;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            white-space: pre-wrap;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .price {
+                color: $text-dark;
+
+                .discount {
+                    margin-left: 5px;
+                    text-decoration: line-through;
+                    color: $text-dark-secondary;
+                    font-size: 12px;
+                }
+            }
+
+            .button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary-color; // $gold;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: 0;
+                color: $text-light;
+            }
+        }
+    }
+}

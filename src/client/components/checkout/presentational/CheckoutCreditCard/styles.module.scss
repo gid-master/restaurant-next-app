@@ -1,0 +1,53 @@
+@import "styles/variables.scss";
+
+.credit-card-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .controller {
+        width: 100%;
+        margin-top: $padding;
+
+        &.half {
+            width: 47%;
+        }
+
+        &.error {
+            .input {
+                border-color: $error;
+                color: $error;
+            }
+
+            .label {
+                color: $error;
+            }
+
+            .message {
+                color: $error;
+                display: block;
+            }
+        }
+
+        .input {
+            width: 100%;
+            resize: none;
+
+            // background-color: $inputs;
+            padding: 8px;
+            color: $text-dark-secondary;
+            border: 1px solid $divider;
+        }
+
+        .label {
+            display: block;
+            color: $text-dark-secondary;
+            margin-bottom: 5px;
+        }
+
+        .message {
+            display: none;
+        }
+    }
+}

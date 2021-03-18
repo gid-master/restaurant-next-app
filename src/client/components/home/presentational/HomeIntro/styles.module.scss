@@ -1,0 +1,22 @@
+@import "styles/variables.scss";
+
+.home-intro {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 118px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        color: $text-dark;
+    }
+
+    span {
+        color: $text-dark-secondary;
+    }
+}

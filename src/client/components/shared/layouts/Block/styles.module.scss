@@ -1,0 +1,49 @@
+@import "styles/variables.scss";
+
+.layout-block {
+    background-color: $third-color;
+    border-radius: 10px;
+    padding: $padding;
+
+    &:not(:last-child) {
+        margin-bottom: $app-vertical;
+    }
+
+    .layout-header {
+        margin-bottom: $padding;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+
+        .title-wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+                color: $text-dark;
+            }
+
+            .link {
+                color: $primary-color;
+                background-color: transparent;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: none;
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 19px;
+            }
+        }
+
+        .subtitle {
+            margin-top: 5px;
+            color: $text-dark-secondary;
+        }
+    }
+}

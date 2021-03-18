@@ -1,0 +1,99 @@
+@import "styles/variables.scss";
+
+.checkout-payment-method {
+    .item {
+        width: 100%;
+        padding: $padding;
+        border: 1px solid $divider;
+        border-radius: 8px;
+
+        &:not(:last-child) {
+            margin-bottom: $app-vertical;
+        }
+
+        .method-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title {
+                color: $text-dark;
+                margin-left: 10px;
+                flex: 1;
+            }
+
+            .image {
+                width: "24px";
+                height: "24px";
+            }
+
+            .checkbox {
+                input[type="radio"][id^="radio"] {
+                    display: none;
+
+                    &:checked + label {
+                        border-color: $text-light;
+                    }
+
+                    &:checked + label:before {
+                        content: "✓";
+                        background-color: $primary-color;
+                        transform: scale(1);
+                    }
+
+                    &:disabled + label {
+                        border-color: $text-light-secondary;
+                    }
+
+                    &:disabled + label:before {
+                        background-color: $text-light-secondary;
+                    }
+                }
+
+                label {
+                    cursor: pointer;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 30px;
+                    border: 2px solid $primary-color;
+                    display: block;
+                    position: relative;
+
+                    &:before {
+                        background-color: $third-color;
+                        color: $text-light;
+                        content: " ";
+                        display: block;
+                        border-radius: 50%;
+                        border: 0px solid $primary-color;
+                        position: absolute;
+                        top: -3px;
+                        left: -3px;
+                        width: 24px;
+                        height: 24px;
+                        text-align: center;
+                        line-height: 28px;
+                        transition-duration: 0.4s;
+                        transform: scale(0);
+                    }
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            opacity: 0;
+
+            &.open {
+                opacity: 1;
+                max-height: 350px;
+            }
+        }
+    }
+}

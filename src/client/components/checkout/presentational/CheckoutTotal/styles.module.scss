@@ -1,0 +1,36 @@
+@import "styles/variables.scss";
+
+.checkout-total {
+    hr {
+        margin: 15px 0;
+        width: 100%;
+        height: 1px;
+        border-width: 0;
+        color: $divider;
+        background-color: $divider;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: $text-dark;
+        }
+
+        .price {
+            color: $text-dark-secondary;
+        }
+
+        &.highlight {
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}

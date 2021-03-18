@@ -1,0 +1,35 @@
+@import "styles/variables.scss";
+
+.grid-row {
+    width: 100vw;
+    margin-left: -$app-horizontal;
+    padding: 0 $app-horizontal;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+    .item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: $padding;
+        }
+
+        &.cover {
+            width: 280px;
+        }
+
+        &.vertical {
+            width: 230px;
+        }
+
+        &.horizontal {
+            width: 100%;
+            scroll-snap-align: center;
+
+            &:not(:last-child) {
+                margin-right: $padding;
+            }
+        }
+    }
+}

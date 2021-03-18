@@ -1,0 +1,13 @@
+body {
+    background-color: $background;
+}
+
+select,
+textarea,
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    font-size: 16px;
+}

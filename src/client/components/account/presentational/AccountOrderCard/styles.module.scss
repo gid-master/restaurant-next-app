@@ -1,0 +1,90 @@
+@import "styles/variables.scss";
+
+.account-accordion-card {
+    position: relative;
+    width: 100%;
+
+    .settings {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .image {
+            object-fit: cover;
+            border-radius: 5px;
+            min-width: 100px;
+            width: 100px;
+            height: 80px;
+            margin-right: 15px;
+            background-color: $divider;
+        }
+
+        .details {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: space-between;
+            justify-content: space-between;
+
+            .name {
+                color: $text-dark;
+            }
+
+            .price {
+                color: $gold;
+                margin: 3px 0;
+            }
+
+            .review {
+                display: flex;
+                align-items: center;
+                margin-left: -3px;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    .additionals {
+        margin-top: 10px;
+
+        ul {
+            list-style: none;
+            color: $text-dark-secondary;
+
+            // font-size: 14px;
+
+            li {
+                position: relative;
+                margin-left: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    border-right: 2px solid $primary-color;
+                    border-bottom: 2px solid $primary-color;
+                    width: 10px;
+                    height: 10px;
+                    top: 12px;
+                    left: -25px;
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
+        }
+    }
+}

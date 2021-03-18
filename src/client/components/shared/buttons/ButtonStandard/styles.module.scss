@@ -1,0 +1,72 @@
+@import "styles/variables.scss";
+
+.button-standard {
+    width: 100%;
+    background-color: $primary-color;
+    border: 0;
+    border-radius: 8px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .text {
+        color: $text-light;
+    }
+
+    .detail {
+        flex: 1;
+        text-align: right;
+        color: $text-light;
+    }
+
+    &.small {
+        padding: 15px;
+        height: 45px;
+
+        img {
+            margin: 2px 5px 0 0;
+        }
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.transparent {
+        background-color: transparent;
+        border: 2px solid $primary-color;
+        padding: 13px 30px;
+
+        .text {
+            color: $text-dark;
+        }
+
+        .detail {
+            color: $text-dark;
+        }
+    }
+
+    &.disabled {
+        background-color: $text-light-secondary;
+        cursor: default;
+
+        &.transparent {
+            border: 2px solid $text-light-secondary;
+
+            .text {
+                color: $text-light;
+            }
+
+            .detail {
+                color: $text-light;
+            }
+        }
+    }
+}

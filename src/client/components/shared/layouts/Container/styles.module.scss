@@ -1,0 +1,30 @@
+@import "styles/variables.scss";
+
+.layout-container {
+    margin-bottom: $app-vertical;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: $padding;
+
+        .title {
+            color: $text-dark;
+        }
+
+        .link {
+            color: $primary-color;
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+}

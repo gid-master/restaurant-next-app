@@ -1,0 +1,30 @@
+@import "styles/variables.scss";
+
+.product-macro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // background: $third-color;
+
+    .separator {
+        height: 30px;
+        width: 1px;
+        background-color: $divider;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 26px;
+            height: 26px;
+            margin-right: 5px;
+        }
+
+        span {
+            color: $text-dark;
+        }
+    }
+}

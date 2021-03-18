@@ -1,0 +1,13 @@
+@import "styles/variables.scss";
+
+.product-comments {
+    .input {
+        font-size: 16px;
+        border: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: $inputs;
+        color: $text-dark-secondary;
+        resize: none;
+    }
+}
