@@ -4,6 +4,36 @@ The idea behind this project is to cover some of the most important functionalit
 
 ![](doc/demo.gif)
 
+## Quick Start
+
+Firstly, clone and install all necessary packages, then start it locally.
+
+```
+> git clone https://github.com/gid-master/restaurant-next-app.git
+
+> npm install
+
+> npm start
+```
+
+Initially the application will work normally because it's using mock data. However, if you want to connect to a real mongoDb database, you need to provide your own connection string.
+
+[Set up your mongoDb Atlas - Getting Started](https://docs.atlas.mongodb.com/getting-started/)
+
+Once you have set up your mongoDb cloud database, you just need to change the environment variable to be able to expose the endpoins, the variable can be found inside <strong>.env</strong> file in the root folder.
+
+```
+NEXT_PUBLIC_DATABASE: "mongodb+srv://your-user:<password>@cluster.rhp27.mongodb.net/<dbname>?retryWrites=true&w=majority",
+```
+
+You also need to change the attribute that allow you to read data from database or mock files.
+
+```
+NEXT_PUBLIC_BACKEND_TARGET=api
+```
+
+That's all, now you can also have this serverless project connected to a mongoDb database.
+
 ## Application Content
 
 -   [Devices Suport](#devices-support)
