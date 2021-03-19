@@ -13,7 +13,7 @@ Firstly, clone and install all necessary packages, then start it locally.
 
 > npm install
 
-> npm start
+> npm run dev
 ```
 
 Initially the application will work normally because it's using mock data. However, if you want to connect to a real mongoDb database, you need to provide your own connection string.
